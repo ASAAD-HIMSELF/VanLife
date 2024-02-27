@@ -8,7 +8,7 @@ const HostProductInformationPage = () => {
     const [activeTab, setActiveTab] = useState('details');
 
     useEffect(() => {
-        axios.get(`https://vanlife-backend-1.onrender.com/api/host/vans/${id}`)
+        axios.get(`https://vanlife-backend.onrender.com/api/host/vans/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setData(response.data);

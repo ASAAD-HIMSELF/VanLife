@@ -8,7 +8,7 @@ const VansPage = () => {
     const [isButtonSelected, setIsButtonSelected] = useState(false);
 
     useEffect(() => {
-        axios.get('https://vanlife-backend-1.onrender.com/api/vans')
+        axios.get('https://vanlife-backend.onrender.com/api/vans')
             .then((response) => {
                 console.log(response.data);
                 setProducts(response.data);
