@@ -7,7 +7,7 @@ const ProductInformationPage = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('https://vanlife-backend.onrender.com/api/vans')
+        axios.get('https://vanlife-backend-lz79.onrender.com/api/vans')
             .then((response) => {
                 console.log(response.data[id]);
                 setData(response.data[id])

@@ -6,7 +6,7 @@ const HostVansPage = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('https://vanlife-backend.onrender.com/api/host/vans')
+        axios.get('https://vanlife-backend-lz79.onrender.com/api/host/vans')
             .then((response) => {
                 console.log(response.data);
                 setProducts(response.data);

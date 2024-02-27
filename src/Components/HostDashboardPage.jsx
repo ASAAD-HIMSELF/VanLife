@@ -7,7 +7,7 @@ const HostDashboardPage = () => {
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        axios.get('https://vanlife-backend.onrender.com/api/vans')
+        axios.get('https://vanlife-backend-lz79.onrender.com/api/vans')
             .then((response) => {
                 console.log(response.data);
                 setProducts(response.data);
